@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_meta_seos",
+  "info": {
+    "displayName": "SEO"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}
