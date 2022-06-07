@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "pages",
+  "collectionName": "articles",
   "info": {
-    "singularName": "page",
-    "pluralName": "pages",
-    "displayName": "page",
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "article",
     "description": ""
   },
   "options": {
@@ -17,48 +17,41 @@
   },
   "attributes": {
     "title": {
-      "type": "string",
-      "required": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
-    },
-    "slug": {
+      },
       "type": "string",
+      "required": true
+    },
+    "author": {
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
-      }
+      },
+      "type": "string",
+      "required": true
     },
-    "structuredData": {
+    "content": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "json"
+      "type": "richtext",
+      "required": true
     },
-    "preventIndexing": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "boolean",
-      "default": false
-    },
-    "seo": {
+    "tags": {
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "component": "meta.seo"
+      "component": "meta.tag"
     }
   }
 }
