@@ -1,12 +1,19 @@
 {
   "collectionName": "components_meta_seos",
   "info": {
-    "displayName": "SEO"
+    "displayName": "SEO",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string"
+    },
+    "meta": {
+      "displayName": "meta",
+      "type": "component",
+      "repeatable": true,
+      "component": "meta.meta"
     }
   }
 }
